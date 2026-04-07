@@ -3,6 +3,9 @@ from sqlalchemy import create_engine, pool
 from alembic import context
 from app.database import Base
 from app.queue.models import Job
+from app.models.user import User
+from app.models.repo import Repo
+from app.models.pr import PullRequest
 
 config = context.config
 fileConfig(config.config_file_name)
